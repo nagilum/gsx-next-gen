@@ -10,7 +10,6 @@ GSXNextGen.cs is the C# class wrapper for the various functions to call the GSX 
 
 ## Example
 
-´´´csharp
     const string serviceUrl = "https://gsxapi.apple.com/gsx-ws/services/emea/asp";
 
     var userId = "user@domain.com"; // This is a verified GSX user.
@@ -29,6 +28,5 @@ GSXNextGen.cs is the C# class wrapper for the various functions to call the GSX 
         GSXNextGen.Envelope.Global,
         serviceUrl,
         "Authenticate");
-´´´
 
 This will create a authenticate object which is passed into the Execute() function, which will convert it to XML and pass it along to the WebserviceHandler for request and response.
